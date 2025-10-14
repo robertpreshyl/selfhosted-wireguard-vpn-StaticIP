@@ -1,0 +1,103 @@
+# WireGuard Private Keys and Sensitive Data
+*.key
+*_private.key
+*_public.key
+server_private.key
+server_public.key
+router_private.key
+router_public.key
+ios_private.key
+ios_public.key
+macos_private.key
+macos_public.key
+windows_private.key
+windows_public.key
+
+# WireGuard Configuration Files (contain private keys)
+*.conf
+wg0.conf
+router-wireguard.conf
+ios-device.conf
+macos-device.conf
+windows-device.conf
+client.conf
+
+# QR Code Files
+*-qr.txt
+*-qr.png
+*.png
+
+# Backup Files
+backup*/
+*backup*.tar.gz
+*backup*.zip
+iptables-before.txt
+iptables-after.txt
+
+# Logs
+*.log
+wireguard*.log
+client.log
+
+# Diagnostic Output
+diagnostics-output.txt
+*-capture.pcap
+
+# Temporary Files
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# OS Specific
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor Specific
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Archives
+*.tar.gz
+*.zip
+*.7z
+*.rar
+
+# Environment Files
+.env
+.env.local
+*.env
+
+# SSH Keys
+*.pem
+*.key.pub
+ssh-key-*
+
+# Don't ignore example configs and templates
+!examples/
+!examples/*.conf
+!*-template.conf
+
+# Documentation builds (if using tools like MkDocs)
+site/
+docs/_build/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyc
+venv/
+env/
+
+# Node
+node_modules/
+npm-debug.log
+
+# Keep README and documentation
+!README.md
+!*.md
+!LICENSE
